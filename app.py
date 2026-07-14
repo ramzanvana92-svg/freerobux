@@ -6,7 +6,7 @@ import os
 import random
 import string
 
-app = Flask(name)
+app = Flask(_name_)
 app.secret_key = ''.join(random.choices(string.ascii_letters, k=24))
 
 DB_PATH = 'sessions.db'
