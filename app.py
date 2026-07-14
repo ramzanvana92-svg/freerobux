@@ -114,6 +114,6 @@ def final():
         return jsonify({'message': msg, 'ip': ip})
     return jsonify({'message': 'ТЫ УЖЕ ЗНАЕШЬ ПРАВДУ.'})
 
-if name == 'main':
+if __name__ == '__main__':
     init_db()
     app.run(debug=True, host='0.0.0.0', port=5000)
